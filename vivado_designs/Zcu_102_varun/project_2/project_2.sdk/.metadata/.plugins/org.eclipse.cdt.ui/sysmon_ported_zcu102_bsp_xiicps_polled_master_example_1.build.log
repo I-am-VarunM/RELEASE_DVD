@@ -1,0 +1,21 @@
+15:41:44 **** Auto Build of configuration Debug for project sysmon_ported_zcu102_bsp_xiicps_polled_master_example_1 ****
+make all 
+'Building file: ../src/xiicps_polled_master_example.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xiicps_polled_master_example.o" -I../../sysmon_ported_zcu102_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/xiicps_polled_master_example.d" -MT"src/xiicps_polled_master_example.o" -o "src/xiicps_polled_master_example.o" "../src/xiicps_polled_master_example.c"
+'Finished building: ../src/xiicps_polled_master_example.c'
+' '
+'Building target: sysmon_ported_zcu102_bsp_xiicps_polled_master_example_1.elf'
+'Invoking: ARM v8 gcc linker'
+aarch64-none-elf-gcc -Wl,-T -Wl,../src/lscript.ld -L../../sysmon_ported_zcu102_bsp/psu_cortexa53_0/lib -o "sysmon_ported_zcu102_bsp_xiicps_polled_master_example_1.elf"  ./src/xiicps_polled_master_example.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilsecure,-lxil,-lgcc,-lc,--end-group
+'Finished building target: sysmon_ported_zcu102_bsp_xiicps_polled_master_example_1.elf'
+' '
+'Invoking: ARM v8 Print Size'
+aarch64-none-elf-size sysmon_ported_zcu102_bsp_xiicps_polled_master_example_1.elf  |tee "sysmon_ported_zcu102_bsp_xiicps_polled_master_example_1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  40396	   2488	  21040	  63924	   f9b4	sysmon_ported_zcu102_bsp_xiicps_polled_master_example_1.elf
+'Finished building: sysmon_ported_zcu102_bsp_xiicps_polled_master_example_1.elf.size'
+' '
+
+15:41:47 Build Finished (took 2s.172ms)
+

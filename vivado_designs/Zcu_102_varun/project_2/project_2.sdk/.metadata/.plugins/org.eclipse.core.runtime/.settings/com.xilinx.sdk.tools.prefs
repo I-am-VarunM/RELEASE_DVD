@@ -1,0 +1,16 @@
+com.xilinx.sdk.linkgen.prefs.sysmon_ported_zcu102\:.bss=psu_ddr_0_MEM_0
+com.xilinx.sdk.linkgen.prefs.sysmon_ported_zcu102\:.data=psu_ddr_0_MEM_0
+com.xilinx.sdk.linkgen.prefs.sysmon_ported_zcu102\:.data1=psu_ddr_0_MEM_0
+com.xilinx.sdk.linkgen.prefs.sysmon_ported_zcu102\:.fixup=psu_ddr_0_MEM_0
+com.xilinx.sdk.linkgen.prefs.sysmon_ported_zcu102\:.rodata=psu_ddr_0_MEM_0
+com.xilinx.sdk.linkgen.prefs.sysmon_ported_zcu102\:.rodata1=psu_ddr_0_MEM_0
+com.xilinx.sdk.linkgen.prefs.sysmon_ported_zcu102\:.sbss=psu_ddr_0_MEM_0
+com.xilinx.sdk.linkgen.prefs.sysmon_ported_zcu102\:.sbss2=psu_ddr_0_MEM_0
+com.xilinx.sdk.linkgen.prefs.sysmon_ported_zcu102\:.sdata=psu_ddr_0_MEM_0
+com.xilinx.sdk.linkgen.prefs.sysmon_ported_zcu102\:.sdata2=psu_ddr_0_MEM_0
+com.xilinx.sdk.linkgen.prefs.sysmon_ported_zcu102\:.text=psu_ddr_0_MEM_0
+com.xilinx.sdk.linkgen.prefs.sysmon_ported_zcu102\:heap=psu_ddr_0_MEM_0
+com.xilinx.sdk.linkgen.prefs.sysmon_ported_zcu102\:heap-size=204800
+com.xilinx.sdk.linkgen.prefs.sysmon_ported_zcu102\:stack=psu_ddr_0_MEM_0
+com.xilinx.sdk.linkgen.prefs.sysmon_ported_zcu102\:stack-size=1024
+eclipse.preferences.version=1

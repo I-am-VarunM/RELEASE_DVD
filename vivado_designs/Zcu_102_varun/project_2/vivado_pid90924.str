@@ -1,0 +1,182 @@
+/*
+
+Xilinx Vivado v2019.1 (64-bit) [Major: 2019, Minor: 1]
+SW Build: 2552052 on Fri May 24 14:47:09 MDT 2019
+IP Build: 2548770 on Fri May 24 18:01:18 MDT 2019
+
+Process ID (PID): 90924
+License: Customer
+
+Current time: 	Tue Jul 25 18:21:20 CEST 2023
+Time zone: 	Central European Standard Time (Europe/Berlin)
+
+OS: Ubuntu
+OS Version: 5.15.0-76-generic
+OS Architecture: amd64
+Available processors (cores): 6
+
+Display: :0.0
+Screen size: 1920x1080
+Screen resolution (DPI): 100
+Available screens: 1
+Available disk space: 193 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	9.0.4 64-bit
+Java home: 	/Software/xilinx/2019.1-sdx/Vivado/2019.1/tps/lnx64/jre9.0.4
+Java executable location: 	/Software/xilinx/2019.1-sdx/Vivado/2019.1/tps/lnx64/jre9.0.4/bin/java
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	manvar00
+User home directory: /home/manvar00
+User working directory: /home/manvar00/Downloads/RELEASE_DVD/vivado_designs/Zcu_102_varun/project_2
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: /Software/xilinx/2019.1-sdx/Vivado
+HDI_APPROOT: /Software/xilinx/2019.1-sdx/Vivado/2019.1
+RDI_DATADIR: /Software/xilinx/2019.1-sdx/Vivado/2019.1/data
+RDI_BINDIR: /Software/xilinx/2019.1-sdx/Vivado/2019.1/bin
+
+Vivado preferences file location: /home/manvar00/.Xilinx/Vivado/2019.1/vivado.xml
+Vivado preferences directory: /home/manvar00/.Xilinx/Vivado/2019.1/
+Vivado layouts directory: /home/manvar00/.Xilinx/Vivado/2019.1/layouts
+PlanAhead jar file location: 	/Software/xilinx/2019.1-sdx/Vivado/2019.1/lib/classes/planAhead.jar
+Vivado log file location: 	/home/manvar00/Downloads/RELEASE_DVD/vivado_designs/Zcu_102_varun/project_2/vivado.log
+Vivado journal file location: 	/home/manvar00/Downloads/RELEASE_DVD/vivado_designs/Zcu_102_varun/project_2/vivado.jou
+Engine tmp dir: 	./.Xil/Vivado-90924-i80pc15
+
+Xilinx Environment Variables
+----------------------------
+XILINX: /Software/xilinx/2019.1-sdx/Vivado/2019.1/ids_lite/ISE
+XILINXD_LICENSE_FILE: 2100@i80license.itec.kit.edu
+XILINX_DSP: /Software/xilinx/2019.1-sdx/Vivado/2019.1/ids_lite/ISE
+XILINX_PLANAHEAD: /Software/xilinx/2019.1-sdx/Vivado/2019.1
+XILINX_SDK: /Software/xilinx/2019.1-sdx/SDK/2019.1
+XILINX_SDX: /Software/xilinx/2019.1-sdx/SDx/2019.1
+XILINX_VIVADO: /Software/xilinx/2019.1-sdx/Vivado/2019.1
+XILINX_VIVADO_HLS: /Software/xilinx/2019.1-sdx/Vivado/2019.1
+
+
+GUI allocated memory:	154 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 837 MB
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+selectButton(PAResourceEtoH.GettingStartedView_OPEN_PROJECT, "Open Project"); // x (w, cl)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_PROJECT
+setFileChooser("/home/manvar00/Downloads/RELEASE_DVD/vivado_designs/Zcu_102_varun/project_2/project_2.xpr");
+// by (cl):  Open Project : addNotify
+// Opening Vivado Project: /home/manvar00/Downloads/RELEASE_DVD/vivado_designs/Zcu_102_varun/project_2/project_2.xpr. Version: Vivado v2019.1 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 850 MB. GUI used memory: 51 MB. Current time: 7/25/23, 6:21:22 PM CEST
+// Tcl Message: open_project /home/manvar00/Downloads/RELEASE_DVD/vivado_designs/Zcu_102_varun/project_2/project_2.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 105 MB (+107863kb) [00:00:23]
+// [Engine Memory]: 968 MB (+863615kb) [00:00:23]
+// [GUI Memory]: 128 MB (+18351kb) [00:00:24]
+// [Engine Memory]: 1,035 MB (+19248kb) [00:00:24]
+// WARNING: HEventQueue.dispatchEvent() is taking  1892 ms.
+// Tcl Message: open_project /home/manvar00/Downloads/RELEASE_DVD/vivado_designs/Zcu_102_varun/project_2/project_2.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories 
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/Software/xilinx/2019.1-sdx/Vivado/2019.1/data/ip'. 
+// Project name: project_2; location: /home/manvar00/Downloads/RELEASE_DVD/vivado_designs/Zcu_102_varun/project_2; part: xczu9eg-ffvb1156-2-e
+// 'i' command handler elapsed time: 17 seconds
+// [Engine Memory]: 1,087 MB (+104kb) [00:00:25]
+// Elapsed time: 14 seconds
+dismissDialog("Open Project"); // by (cl)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,089 MB. GUI used memory: 63 MB. Current time: 7/25/23, 6:21:37 PM CEST
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: DG_GRAPH_STALE
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // Z (q, cl)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // ae (cl)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // ae (cl)
+selectMenuItem(PAResourceCommand.PACommandNames_LAUNCH_HARDWARE, "Launch SDK"); // ah (cl)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // Z (q, cl)
+// Run Command: PAResourceCommand.PACommandNames_LAUNCH_HARDWARE
+// aa (cl): Launch SDK: addNotify
+// TclEventType: DG_GRAPH_STALE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aa)
+// [Engine Memory]: 1,144 MB (+2709kb) [00:00:36]
+// HOptionPane Warning: 'A background task is running. Please wait until it completes and try again. (Background Task)'
+// Tcl Message: update_compile_order -fileset sources_1 
+selectButton("OptionPane.button", "OK"); // JButton (A, H)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,163 MB. GUI used memory: 63 MB. Current time: 7/25/23, 6:21:52 PM CEST
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aa)
+// 'o' command handler elapsed time: 8 seconds
+dismissDialog("Launch SDK"); // aa (cl)
+// Tcl Message: launch_sdk -workspace /home/manvar00/Downloads/RELEASE_DVD/vivado_designs/Zcu_102_varun/project_2/project_2.sdk -hwspec /home/manvar00/Downloads/RELEASE_DVD/vivado_designs/Zcu_102_varun/project_2/project_2.sdk/Base_Zynq_MPSoC_wrapper.hdf 
+// Tcl Message: INFO: [Vivado 12-393] Launching SDK... INFO: [Vivado 12-417] Running xsdk -workspace /home/manvar00/Downloads/RELEASE_DVD/vivado_designs/Zcu_102_varun/project_2/project_2.sdk -hwspec /home/manvar00/Downloads/RELEASE_DVD/vivado_designs/Zcu_102_varun/project_2/project_2.sdk/Base_Zynq_MPSoC_wrapper.hdf INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages. 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,157 MB. GUI used memory: 63 MB. Current time: 7/25/23, 6:51:52 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,158 MB. GUI used memory: 57 MB. Current time: 7/25/23, 7:21:52 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,158 MB. GUI used memory: 57 MB. Current time: 7/25/23, 7:51:52 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,158 MB. GUI used memory: 57 MB. Current time: 7/25/23, 8:21:52 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,158 MB. GUI used memory: 57 MB. Current time: 7/25/23, 8:51:52 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,158 MB. GUI used memory: 57 MB. Current time: 7/25/23, 9:21:52 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,158 MB. GUI used memory: 57 MB. Current time: 7/25/23, 9:51:52 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,158 MB. GUI used memory: 57 MB. Current time: 7/25/23, 10:21:52 PM CEST
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 1404 ms. Increasing delay to 3000 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,159 MB. GUI used memory: 57 MB. Current time: 7/25/23, 10:51:53 PM CEST
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 1018 ms. Increasing delay to 3054 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,159 MB. GUI used memory: 57 MB. Current time: 7/25/23, 11:21:53 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,159 MB. GUI used memory: 57 MB. Current time: 7/25/23, 11:51:53 PM CEST
+// WARNING: HTimer (HSTRUtils Dump STR Log Timer) is taking 691ms to process. Increasing delay to 4000 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,159 MB. GUI used memory: 57 MB. Current time: 7/26/23, 12:21:53 AM CEST
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 1949 ms. Increasing delay to 4000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 1748 ms. Increasing delay to 5244 ms.
+// WARNING: HTimer (HSTRUtils Dump STR Log Timer) is taking 2256ms to process. Increasing delay to 5000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2256 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,159 MB. GUI used memory: 57 MB. Current time: 7/26/23, 12:51:53 AM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,159 MB. GUI used memory: 57 MB. Current time: 7/26/23, 1:21:53 AM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,159 MB. GUI used memory: 57 MB. Current time: 7/26/23, 1:51:53 AM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,159 MB. GUI used memory: 57 MB. Current time: 7/26/23, 2:21:53 AM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,159 MB. GUI used memory: 57 MB. Current time: 7/26/23, 2:51:53 AM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,159 MB. GUI used memory: 57 MB. Current time: 7/26/23, 3:21:53 AM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,159 MB. GUI used memory: 57 MB. Current time: 7/26/23, 3:51:53 AM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,159 MB. GUI used memory: 57 MB. Current time: 7/26/23, 4:21:53 AM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,159 MB. GUI used memory: 57 MB. Current time: 7/26/23, 4:51:53 AM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,159 MB. GUI used memory: 57 MB. Current time: 7/26/23, 5:21:53 AM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,159 MB. GUI used memory: 57 MB. Current time: 7/26/23, 5:51:53 AM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,159 MB. GUI used memory: 57 MB. Current time: 7/26/23, 6:21:53 AM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,159 MB. GUI used memory: 57 MB. Current time: 7/26/23, 6:51:53 AM CEST

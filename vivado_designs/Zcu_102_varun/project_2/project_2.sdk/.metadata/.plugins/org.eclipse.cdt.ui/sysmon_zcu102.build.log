@@ -1,0 +1,520 @@
+21:26:53 **** Build of configuration Debug for project sysmon_zcu102 ****
+make all 
+'Building file: ../src/xsysmon_psu/xsysmonpsu_polled_example.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -I../../standalone_bsp_zcu102/psu_cortexa53_0/include -I"C:\Users\Carina\KIT\ma_ck\zcu102_src\project_2\project_2.sdk\sysmon_zcu102\src" -I"C:\Users\Carina\KIT\ma_ck\zcu102_src\project_2\project_2.sdk\sysmon_zcu102\src\classifier" -I"C:\Users\Carina\KIT\ma_ck\zcu102_src\project_2\project_2.sdk\sysmon_zcu102\src\interrupts" -I"C:\Users\Carina\KIT\ma_ck\zcu102_src\project_2\project_2.sdk\sysmon_zcu102\src\peripheral" -I"C:\Users\Carina\KIT\ma_ck\zcu102_src\project_2\project_2.sdk\sysmon_zcu102\src\xsysmon" -I"C:\Users\Carina\KIT\ma_ck\zcu102_src\project_2\project_2.sdk\sysmon_zcu102\src\xsysmon_psu" -c -fmessage-length=0 -MT"src/xsysmon_psu/xsysmonpsu_polled_example.o" -MMD -MP -MF"src/xsysmon_psu/xsysmonpsu_polled_example.d" -MT"src/xsysmon_psu/xsysmonpsu_polled_example.o" -o "src/xsysmon_psu/xsysmonpsu_polled_example.o" "../src/xsysmon_psu/xsysmonpsu_polled_example.c"
+In file included from ../src/xsysmon_psu/xsysmonpsu_polled_example.c:65:
+../../standalone_bsp_zcu102/psu_cortexa53_0/include/xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+../src/xsysmon_psu/xsysmonpsu_polled_example.c: In function 'SysMonPsuPolledReadCurrent':
+../src/xsysmon_psu/xsysmonpsu_polled_example.c:456:20: warning: pointer targets in passing argument 2 of 'sendUart' differ in signedness [-Wpointer-sign]
+  sendUart(&UartPs, msg, size);
+                    ^~~
+In file included from ../src/xsysmon_psu/xsysmonpsu_polled_example.c:66:
+../src/xsysmon_psu/..\peripheral\uart_header.h:67:5: note: expected 'u8 *' {aka 'unsigned char *'} but argument is of type 'char *'
+ int sendUart(XUartPs *IntcInstPtr, u8 * msg, u32 size);
+     ^~~~~~~~
+../src/xsysmon_psu/xsysmonpsu_polled_example.c:468:20: warning: pointer targets in passing argument 2 of 'sendUart' differ in signedness [-Wpointer-sign]
+  sendUart(&UartPs, msg1, size);
+                    ^~~~
+In file included from ../src/xsysmon_psu/xsysmonpsu_polled_example.c:66:
+../src/xsysmon_psu/..\peripheral\uart_header.h:67:5: note: expected 'u8 *' {aka 'unsigned char *'} but argument is of type 'char *'
+ int sendUart(XUartPs *IntcInstPtr, u8 * msg, u32 size);
+     ^~~~~~~~
+../src/xsysmon_psu/xsysmonpsu_polled_example.c:489:20: warning: pointer targets in passing argument 2 of 'sendUart' differ in signedness [-Wpointer-sign]
+  sendUart(&UartPs, msg2, size);
+                    ^~~~
+In file included from ../src/xsysmon_psu/xsysmonpsu_polled_example.c:66:
+../src/xsysmon_psu/..\peripheral\uart_header.h:67:5: note: expected 'u8 *' {aka 'unsigned char *'} but argument is of type 'char *'
+ int sendUart(XUartPs *IntcInstPtr, u8 * msg, u32 size);
+     ^~~~~~~~
+../src/xsysmon_psu/xsysmonpsu_polled_example.c:505:20: warning: pointer targets in passing argument 2 of 'sendUart' differ in signedness [-Wpointer-sign]
+  sendUart(&UartPs, msg3, size);
+                    ^~~~
+In file included from ../src/xsysmon_psu/xsysmonpsu_polled_example.c:66:
+../src/xsysmon_psu/..\peripheral\uart_header.h:67:5: note: expected 'u8 *' {aka 'unsigned char *'} but argument is of type 'char *'
+ int sendUart(XUartPs *IntcInstPtr, u8 * msg, u32 size);
+     ^~~~~~~~
+../src/xsysmon_psu/xsysmonpsu_polled_example.c: In function 'SysMonPsuReadCurrentVccint':
+../src/xsysmon_psu/xsysmonpsu_polled_example.c:560:10: warning: unused variable 'Xtime' [-Wunused-variable]
+  XTime * Xtime = 0;
+          ^~~~~
+../src/xsysmon_psu/xsysmonpsu_polled_example.c:559:8: warning: unused variable 'VccIntData' [-Wunused-variable]
+  float VccIntData;
+        ^~~~~~~~~~
+../src/xsysmon_psu/xsysmonpsu_polled_example.c: In function 'SysMonPsuPolledReadMinMax':
+../src/xsysmon_psu/xsysmonpsu_polled_example.c:778:20: warning: pointer targets in passing argument 2 of 'sendUart' differ in signedness [-Wpointer-sign]
+  sendUart(&UartPs, msg, size);
+                    ^~~
+In file included from ../src/xsysmon_psu/xsysmonpsu_polled_example.c:66:
+../src/xsysmon_psu/..\peripheral\uart_header.h:67:5: note: expected 'u8 *' {aka 'unsigned char *'} but argument is of type 'char *'
+ int sendUart(XUartPs *IntcInstPtr, u8 * msg, u32 size);
+     ^~~~~~~~
+../src/xsysmon_psu/xsysmonpsu_polled_example.c:798:20: warning: pointer targets in passing argument 2 of 'sendUart' differ in signedness [-Wpointer-sign]
+  sendUart(&UartPs, msg1, size);
+                    ^~~~
+In file included from ../src/xsysmon_psu/xsysmonpsu_polled_example.c:66:
+../src/xsysmon_psu/..\peripheral\uart_header.h:67:5: note: expected 'u8 *' {aka 'unsigned char *'} but argument is of type 'char *'
+ int sendUart(XUartPs *IntcInstPtr, u8 * msg, u32 size);
+     ^~~~~~~~
+../src/xsysmon_psu/xsysmonpsu_polled_example.c:823:20: warning: pointer targets in passing argument 2 of 'sendUart' differ in signedness [-Wpointer-sign]
+  sendUart(&UartPs, msg2, size);
+                    ^~~~
+In file included from ../src/xsysmon_psu/xsysmonpsu_polled_example.c:66:
+../src/xsysmon_psu/..\peripheral\uart_header.h:67:5: note: expected 'u8 *' {aka 'unsigned char *'} but argument is of type 'char *'
+ int sendUart(XUartPs *IntcInstPtr, u8 * msg, u32 size);
+     ^~~~~~~~
+../src/xsysmon_psu/xsysmonpsu_polled_example.c:848:20: warning: pointer targets in passing argument 2 of 'sendUart' differ in signedness [-Wpointer-sign]
+  sendUart(&UartPs, msg3, size);
+                    ^~~~
+In file included from ../src/xsysmon_psu/xsysmonpsu_polled_example.c:66:
+../src/xsysmon_psu/..\peripheral\uart_header.h:67:5: note: expected 'u8 *' {aka 'unsigned char *'} but argument is of type 'char *'
+ int sendUart(XUartPs *IntcInstPtr, u8 * msg, u32 size);
+     ^~~~~~~~
+../src/xsysmon_psu/xsysmonpsu_polled_example.c: At top level:
+../src/xsysmon_psu/..\peripheral\uart_header.h:61:12: warning: 'SetupInterruptSystem' declared 'static' but never defined [-Wunused-function]
+ static int SetupInterruptSystem(INTC *IntcInstancePtr,
+            ^~~~~~~~~~~~~~~~~~~~
+'Finished building: ../src/xsysmon_psu/xsysmonpsu_polled_example.c'
+' '
+'Building file: ../src/xsysmon/xsysmon_polled_example.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -I../../standalone_bsp_zcu102/psu_cortexa53_0/include -I"C:\Users\Carina\KIT\ma_ck\zcu102_src\project_2\project_2.sdk\sysmon_zcu102\src" -I"C:\Users\Carina\KIT\ma_ck\zcu102_src\project_2\project_2.sdk\sysmon_zcu102\src\classifier" -I"C:\Users\Carina\KIT\ma_ck\zcu102_src\project_2\project_2.sdk\sysmon_zcu102\src\interrupts" -I"C:\Users\Carina\KIT\ma_ck\zcu102_src\project_2\project_2.sdk\sysmon_zcu102\src\peripheral" -I"C:\Users\Carina\KIT\ma_ck\zcu102_src\project_2\project_2.sdk\sysmon_zcu102\src\xsysmon" -I"C:\Users\Carina\KIT\ma_ck\zcu102_src\project_2\project_2.sdk\sysmon_zcu102\src\xsysmon_psu" -c -fmessage-length=0 -MT"src/xsysmon/xsysmon_polled_example.o" -MMD -MP -MF"src/xsysmon/xsysmon_polled_example.d" -MT"src/xsysmon/xsysmon_polled_example.o" -o "src/xsysmon/xsysmon_polled_example.o" "../src/xsysmon/xsysmon_polled_example.c"
+In file included from ../src/xsysmon/xsysmon_polled_example.c:74:
+../../standalone_bsp_zcu102/psu_cortexa53_0/include/xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+../src/xsysmon/xsysmon_polled_example.c: In function 'SysMonPolledReadCurrent':
+../src/xsysmon/xsysmon_polled_example.c:453:20: warning: pointer targets in passing argument 2 of 'sendUart' differ in signedness [-Wpointer-sign]
+  sendUart(&UartPs, msg, size);
+                    ^~~
+In file included from ../src/xsysmon/xsysmon_polled_example.c:75:
+../src/xsysmon/..\peripheral\uart_header.h:67:5: note: expected 'u8 *' {aka 'unsigned char *'} but argument is of type 'char *'
+ int sendUart(XUartPs *IntcInstPtr, u8 * msg, u32 size);
+     ^~~~~~~~
+../src/xsysmon/xsysmon_polled_example.c:468:20: warning: pointer targets in passing argument 2 of 'sendUart' differ in signedness [-Wpointer-sign]
+  sendUart(&UartPs, msg1, size);
+                    ^~~~
+In file included from ../src/xsysmon/xsysmon_polled_example.c:75:
+../src/xsysmon/..\peripheral\uart_header.h:67:5: note: expected 'u8 *' {aka 'unsigned char *'} but argument is of type 'char *'
+ int sendUart(XUartPs *IntcInstPtr, u8 * msg, u32 size);
+     ^~~~~~~~
+../src/xsysmon/xsysmon_polled_example.c:483:20: warning: pointer targets in passing argument 2 of 'sendUart' differ in signedness [-Wpointer-sign]
+  sendUart(&UartPs, msg2, size);
+                    ^~~~
+In file included from ../src/xsysmon/xsysmon_polled_example.c:75:
+../src/xsysmon/..\peripheral\uart_header.h:67:5: note: expected 'u8 *' {aka 'unsigned char *'} but argument is of type 'char *'
+ int sendUart(XUartPs *IntcInstPtr, u8 * msg, u32 size);
+     ^~~~~~~~
+../src/xsysmon/xsysmon_polled_example.c:486:2: warning: implicit declaration of function 'free' [-Wimplicit-function-declaration]
+  free(msg);
+  ^~~~
+../src/xsysmon/xsysmon_polled_example.c:486:2: warning: incompatible implicit declaration of built-in function 'free'
+../src/xsysmon/xsysmon_polled_example.c:486:2: note: include '<stdlib.h>' or provide a declaration of 'free'
+../src/xsysmon/xsysmon_polled_example.c:77:1:
++#include <stdlib.h>
+ 
+../src/xsysmon/xsysmon_polled_example.c:486:2:
+  free(msg);
+  ^~~~
+../src/xsysmon/xsysmon_polled_example.c: In function 'SysMonPolledReadMinMax':
+../src/xsysmon/xsysmon_polled_example.c:677:20: warning: pointer targets in passing argument 2 of 'sendUart' differ in signedness [-Wpointer-sign]
+  sendUart(&UartPs, msg, size);
+                    ^~~
+In file included from ../src/xsysmon/xsysmon_polled_example.c:75:
+../src/xsysmon/..\peripheral\uart_header.h:67:5: note: expected 'u8 *' {aka 'unsigned char *'} but argument is of type 'char *'
+ int sendUart(XUartPs *IntcInstPtr, u8 * msg, u32 size);
+     ^~~~~~~~
+../src/xsysmon/xsysmon_polled_example.c:699:20: warning: pointer targets in passing argument 2 of 'sendUart' differ in signedness [-Wpointer-sign]
+  sendUart(&UartPs, msg1, size);
+                    ^~~~
+In file included from ../src/xsysmon/xsysmon_polled_example.c:75:
+../src/xsysmon/..\peripheral\uart_header.h:67:5: note: expected 'u8 *' {aka 'unsigned char *'} but argument is of type 'char *'
+ int sendUart(XUartPs *IntcInstPtr, u8 * msg, u32 size);
+     ^~~~~~~~
+../src/xsysmon/xsysmon_polled_example.c:722:20: warning: pointer targets in passing argument 2 of 'sendUart' differ in signedness [-Wpointer-sign]
+  sendUart(&UartPs, msg2, size);
+                    ^~~~
+In file included from ../src/xsysmon/xsysmon_polled_example.c:75:
+../src/xsysmon/..\peripheral\uart_header.h:67:5: note: expected 'u8 *' {aka 'unsigned char *'} but argument is of type 'char *'
+ int sendUart(XUartPs *IntcInstPtr, u8 * msg, u32 size);
+     ^~~~~~~~
+../src/xsysmon/xsysmon_polled_example.c:725:2: warning: incompatible implicit declaration of built-in function 'free'
+  free(msg);
+  ^~~~
+../src/xsysmon/xsysmon_polled_example.c:725:2: note: include '<stdlib.h>' or provide a declaration of 'free'
+In file included from ../src/xsysmon/xsysmon_polled_example.c:75:
+../src/xsysmon/xsysmon_polled_example.c: At top level:
+../src/xsysmon/..\peripheral\uart_header.h:61:12: warning: 'SetupInterruptSystem' declared 'static' but never defined [-Wunused-function]
+ static int SetupInterruptSystem(INTC *IntcInstancePtr,
+            ^~~~~~~~~~~~~~~~~~~~
+'Finished building: ../src/xsysmon/xsysmon_polled_example.c'
+' '
+'Building file: ../src/peripheral/i2c.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -I../../standalone_bsp_zcu102/psu_cortexa53_0/include -I"C:\Users\Carina\KIT\ma_ck\zcu102_src\project_2\project_2.sdk\sysmon_zcu102\src" -I"C:\Users\Carina\KIT\ma_ck\zcu102_src\project_2\project_2.sdk\sysmon_zcu102\src\classifier" -I"C:\Users\Carina\KIT\ma_ck\zcu102_src\project_2\project_2.sdk\sysmon_zcu102\src\interrupts" -I"C:\Users\Carina\KIT\ma_ck\zcu102_src\project_2\project_2.sdk\sysmon_zcu102\src\peripheral" -I"C:\Users\Carina\KIT\ma_ck\zcu102_src\project_2\project_2.sdk\sysmon_zcu102\src\xsysmon" -I"C:\Users\Carina\KIT\ma_ck\zcu102_src\project_2\project_2.sdk\sysmon_zcu102\src\xsysmon_psu" -c -fmessage-length=0 -MT"src/peripheral/i2c.o" -MMD -MP -MF"src/peripheral/i2c.d" -MT"src/peripheral/i2c.o" -o "src/peripheral/i2c.o" "../src/peripheral/i2c.c"
+'Finished building: ../src/peripheral/i2c.c'
+' '
+'Building file: ../src/peripheral/pmodtmp2.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -I../../standalone_bsp_zcu102/psu_cortexa53_0/include -I"C:\Users\Carina\KIT\ma_ck\zcu102_src\project_2\project_2.sdk\sysmon_zcu102\src" -I"C:\Users\Carina\KIT\ma_ck\zcu102_src\project_2\project_2.sdk\sysmon_zcu102\src\classifier" -I"C:\Users\Carina\KIT\ma_ck\zcu102_src\project_2\project_2.sdk\sysmon_zcu102\src\interrupts" -I"C:\Users\Carina\KIT\ma_ck\zcu102_src\project_2\project_2.sdk\sysmon_zcu102\src\peripheral" -I"C:\Users\Carina\KIT\ma_ck\zcu102_src\project_2\project_2.sdk\sysmon_zcu102\src\xsysmon" -I"C:\Users\Carina\KIT\ma_ck\zcu102_src\project_2\project_2.sdk\sysmon_zcu102\src\xsysmon_psu" -c -fmessage-length=0 -MT"src/peripheral/pmodtmp2.o" -MMD -MP -MF"src/peripheral/pmodtmp2.d" -MT"src/peripheral/pmodtmp2.o" -o "src/peripheral/pmodtmp2.o" "../src/peripheral/pmodtmp2.c"
+In file included from ../src/peripheral/pmodtmp2.h:12,
+                 from ../src/peripheral/pmodtmp2.c:9:
+../../standalone_bsp_zcu102/psu_cortexa53_0/include/xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+../src/peripheral/pmodtmp2.c: In function 'readTmpFromPmodtmp2':
+../src/peripheral/pmodtmp2.c:112:2: warning: 'return' with no value, in function returning non-void
+  return ;
+  ^~~~~~
+../src/peripheral/pmodtmp2.c:88:7: note: declared here
+ float readTmpFromPmodtmp2(float * value, XTime * time){
+       ^~~~~~~~~~~~~~~~~~~
+../src/peripheral/pmodtmp2.c:89:14: warning: unused variable 'msb' [-Wunused-variable]
+  u8 lsb = 0, msb = 0;
+              ^~~
+../src/peripheral/pmodtmp2.c:89:5: warning: unused variable 'lsb' [-Wunused-variable]
+  u8 lsb = 0, msb = 0;
+     ^~~
+In file included from ../src/peripheral/..\xsysmon\sysmon_header.h:36,
+                 from ../src/peripheral/pmodtmp2.c:14:
+../src/peripheral/pmodtmp2.c: At top level:
+../src/peripheral/..\xsysmon\..\peripheral\uart_header.h:61:12: warning: 'SetupInterruptSystem' declared 'static' but never defined [-Wunused-function]
+ static int SetupInterruptSystem(INTC *IntcInstancePtr,
+            ^~~~~~~~~~~~~~~~~~~~
+'Finished building: ../src/peripheral/pmodtmp2.c'
+' '
+'Building file: ../src/peripheral/system_test.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -I../../standalone_bsp_zcu102/psu_cortexa53_0/include -I"C:\Users\Carina\KIT\ma_ck\zcu102_src\project_2\project_2.sdk\sysmon_zcu102\src" -I"C:\Users\Carina\KIT\ma_ck\zcu102_src\project_2\project_2.sdk\sysmon_zcu102\src\classifier" -I"C:\Users\Carina\KIT\ma_ck\zcu102_src\project_2\project_2.sdk\sysmon_zcu102\src\interrupts" -I"C:\Users\Carina\KIT\ma_ck\zcu102_src\project_2\project_2.sdk\sysmon_zcu102\src\peripheral" -I"C:\Users\Carina\KIT\ma_ck\zcu102_src\project_2\project_2.sdk\sysmon_zcu102\src\xsysmon" -I"C:\Users\Carina\KIT\ma_ck\zcu102_src\project_2\project_2.sdk\sysmon_zcu102\src\xsysmon_psu" -c -fmessage-length=0 -MT"src/peripheral/system_test.o" -MMD -MP -MF"src/peripheral/system_test.d" -MT"src/peripheral/system_test.o" -o "src/peripheral/system_test.o" "../src/peripheral/system_test.c"
+In file included from ../src/peripheral/..\xsysmon_psu\sysmonpsu_header.h:36,
+                 from ../src/peripheral/system_test.c:28:
+../../standalone_bsp_zcu102/psu_cortexa53_0/include/xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+'Finished building: ../src/peripheral/system_test.c'
+' '
+'Building file: ../src/peripheral/xgpio_tapp_example.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -I../../standalone_bsp_zcu102/psu_cortexa53_0/include -I"C:\Users\Carina\KIT\ma_ck\zcu102_src\project_2\project_2.sdk\sysmon_zcu102\src" -I"C:\Users\Carina\KIT\ma_ck\zcu102_src\project_2\project_2.sdk\sysmon_zcu102\src\classifier" -I"C:\Users\Carina\KIT\ma_ck\zcu102_src\project_2\project_2.sdk\sysmon_zcu102\src\interrupts" -I"C:\Users\Carina\KIT\ma_ck\zcu102_src\project_2\project_2.sdk\sysmon_zcu102\src\peripheral" -I"C:\Users\Carina\KIT\ma_ck\zcu102_src\project_2\project_2.sdk\sysmon_zcu102\src\xsysmon" -I"C:\Users\Carina\KIT\ma_ck\zcu102_src\project_2\project_2.sdk\sysmon_zcu102\src\xsysmon_psu" -c -fmessage-length=0 -MT"src/peripheral/xgpio_tapp_example.o" -MMD -MP -MF"src/peripheral/xgpio_tapp_example.d" -MT"src/peripheral/xgpio_tapp_example.o" -o "src/peripheral/xgpio_tapp_example.o" "../src/peripheral/xgpio_tapp_example.c"
+'Finished building: ../src/peripheral/xgpio_tapp_example.c'
+' '
+'Building file: ../src/peripheral/xuartps_intr_example.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -I../../standalone_bsp_zcu102/psu_cortexa53_0/include -I"C:\Users\Carina\KIT\ma_ck\zcu102_src\project_2\project_2.sdk\sysmon_zcu102\src" -I"C:\Users\Carina\KIT\ma_ck\zcu102_src\project_2\project_2.sdk\sysmon_zcu102\src\classifier" -I"C:\Users\Carina\KIT\ma_ck\zcu102_src\project_2\project_2.sdk\sysmon_zcu102\src\interrupts" -I"C:\Users\Carina\KIT\ma_ck\zcu102_src\project_2\project_2.sdk\sysmon_zcu102\src\peripheral" -I"C:\Users\Carina\KIT\ma_ck\zcu102_src\project_2\project_2.sdk\sysmon_zcu102\src\xsysmon" -I"C:\Users\Carina\KIT\ma_ck\zcu102_src\project_2\project_2.sdk\sysmon_zcu102\src\xsysmon_psu" -c -fmessage-length=0 -MT"src/peripheral/xuartps_intr_example.o" -MMD -MP -MF"src/peripheral/xuartps_intr_example.d" -MT"src/peripheral/xuartps_intr_example.o" -o "src/peripheral/xuartps_intr_example.o" "../src/peripheral/xuartps_intr_example.c"
+../src/peripheral/xuartps_intr_example.c: In function 'readUart':
+../src/peripheral/xuartps_intr_example.c:271:27: warning: format '%u' expects argument of type 'unsigned int', but argument 2 has type 'u8 *' {aka 'unsigned char *'} [-Wformat=]
+   printf("Data received: %u \n", msg);
+                          ~^      ~~~
+                          %hhn
+'Finished building: ../src/peripheral/xuartps_intr_example.c'
+' '
+'Building file: ../src/interrupts/xscugic_tapp_example.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -I../../standalone_bsp_zcu102/psu_cortexa53_0/include -I"C:\Users\Carina\KIT\ma_ck\zcu102_src\project_2\project_2.sdk\sysmon_zcu102\src" -I"C:\Users\Carina\KIT\ma_ck\zcu102_src\project_2\project_2.sdk\sysmon_zcu102\src\classifier" -I"C:\Users\Carina\KIT\ma_ck\zcu102_src\project_2\project_2.sdk\sysmon_zcu102\src\interrupts" -I"C:\Users\Carina\KIT\ma_ck\zcu102_src\project_2\project_2.sdk\sysmon_zcu102\src\peripheral" -I"C:\Users\Carina\KIT\ma_ck\zcu102_src\project_2\project_2.sdk\sysmon_zcu102\src\xsysmon" -I"C:\Users\Carina\KIT\ma_ck\zcu102_src\project_2\project_2.sdk\sysmon_zcu102\src\xsysmon_psu" -c -fmessage-length=0 -MT"src/interrupts/xscugic_tapp_example.o" -MMD -MP -MF"src/interrupts/xscugic_tapp_example.d" -MT"src/interrupts/xscugic_tapp_example.o" -o "src/interrupts/xscugic_tapp_example.o" "../src/interrupts/xscugic_tapp_example.c"
+'Finished building: ../src/interrupts/xscugic_tapp_example.c'
+' '
+'Building file: ../src/classifier/feature_extraction.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -I../../standalone_bsp_zcu102/psu_cortexa53_0/include -I"C:\Users\Carina\KIT\ma_ck\zcu102_src\project_2\project_2.sdk\sysmon_zcu102\src" -I"C:\Users\Carina\KIT\ma_ck\zcu102_src\project_2\project_2.sdk\sysmon_zcu102\src\classifier" -I"C:\Users\Carina\KIT\ma_ck\zcu102_src\project_2\project_2.sdk\sysmon_zcu102\src\interrupts" -I"C:\Users\Carina\KIT\ma_ck\zcu102_src\project_2\project_2.sdk\sysmon_zcu102\src\peripheral" -I"C:\Users\Carina\KIT\ma_ck\zcu102_src\project_2\project_2.sdk\sysmon_zcu102\src\xsysmon" -I"C:\Users\Carina\KIT\ma_ck\zcu102_src\project_2\project_2.sdk\sysmon_zcu102\src\xsysmon_psu" -c -fmessage-length=0 -MT"src/classifier/feature_extraction.o" -MMD -MP -MF"src/classifier/feature_extraction.d" -MT"src/classifier/feature_extraction.o" -o "src/classifier/feature_extraction.o" "../src/classifier/feature_extraction.c"
+../src/classifier/feature_extraction.c: In function 'compute_dft_complex':
+../src/classifier/feature_extraction.c:24:17: warning: unused variable 'cexp_val' [-Wunused-variable]
+  double complex cexp_val = 0.0;
+                 ^~~~~~~~
+'Finished building: ../src/classifier/feature_extraction.c'
+' '
+'Building file: ../src/classifier/mlmodel.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -I../../standalone_bsp_zcu102/psu_cortexa53_0/include -I"C:\Users\Carina\KIT\ma_ck\zcu102_src\project_2\project_2.sdk\sysmon_zcu102\src" -I"C:\Users\Carina\KIT\ma_ck\zcu102_src\project_2\project_2.sdk\sysmon_zcu102\src\classifier" -I"C:\Users\Carina\KIT\ma_ck\zcu102_src\project_2\project_2.sdk\sysmon_zcu102\src\interrupts" -I"C:\Users\Carina\KIT\ma_ck\zcu102_src\project_2\project_2.sdk\sysmon_zcu102\src\peripheral" -I"C:\Users\Carina\KIT\ma_ck\zcu102_src\project_2\project_2.sdk\sysmon_zcu102\src\xsysmon" -I"C:\Users\Carina\KIT\ma_ck\zcu102_src\project_2\project_2.sdk\sysmon_zcu102\src\xsysmon_psu" -c -fmessage-length=0 -MT"src/classifier/mlmodel.o" -MMD -MP -MF"src/classifier/mlmodel.d" -MT"src/classifier/mlmodel.o" -o "src/classifier/mlmodel.o" "../src/classifier/mlmodel.c"
+'Finished building: ../src/classifier/mlmodel.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -I../../standalone_bsp_zcu102/psu_cortexa53_0/include -I"C:\Users\Carina\KIT\ma_ck\zcu102_src\project_2\project_2.sdk\sysmon_zcu102\src" -I"C:\Users\Carina\KIT\ma_ck\zcu102_src\project_2\project_2.sdk\sysmon_zcu102\src\classifier" -I"C:\Users\Carina\KIT\ma_ck\zcu102_src\project_2\project_2.sdk\sysmon_zcu102\src\interrupts" -I"C:\Users\Carina\KIT\ma_ck\zcu102_src\project_2\project_2.sdk\sysmon_zcu102\src\peripheral" -I"C:\Users\Carina\KIT\ma_ck\zcu102_src\project_2\project_2.sdk\sysmon_zcu102\src\xsysmon" -I"C:\Users\Carina\KIT\ma_ck\zcu102_src\project_2\project_2.sdk\sysmon_zcu102\src\xsysmon_psu" -c -fmessage-length=0 -MT"src/platform.o" -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building file: ../src/sysmon_main.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -I../../standalone_bsp_zcu102/psu_cortexa53_0/include -I"C:\Users\Carina\KIT\ma_ck\zcu102_src\project_2\project_2.sdk\sysmon_zcu102\src" -I"C:\Users\Carina\KIT\ma_ck\zcu102_src\project_2\project_2.sdk\sysmon_zcu102\src\classifier" -I"C:\Users\Carina\KIT\ma_ck\zcu102_src\project_2\project_2.sdk\sysmon_zcu102\src\interrupts" -I"C:\Users\Carina\KIT\ma_ck\zcu102_src\project_2\project_2.sdk\sysmon_zcu102\src\peripheral" -I"C:\Users\Carina\KIT\ma_ck\zcu102_src\project_2\project_2.sdk\sysmon_zcu102\src\xsysmon" -I"C:\Users\Carina\KIT\ma_ck\zcu102_src\project_2\project_2.sdk\sysmon_zcu102\src\xsysmon_psu" -c -fmessage-length=0 -MT"src/sysmon_main.o" -MMD -MP -MF"src/sysmon_main.d" -MT"src/sysmon_main.o" -o "src/sysmon_main.o" "../src/sysmon_main.c"
+In file included from ../src/.\xsysmon\sysmon_header.h:37,
+                 from ../src/sysmon_main.c:49:
+../../standalone_bsp_zcu102/psu_cortexa53_0/include/xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from ../src/platform.h:36,
+                 from ../src/sysmon_main.c:51:
+../src/platform_config.h:5: warning: "UART_DEVICE_ID" redefined
+ #define UART_DEVICE_ID 0
+ 
+In file included from ../src/.\xsysmon\sysmon_header.h:36,
+                 from ../src/sysmon_main.c:49:
+../src/.\xsysmon\..\peripheral\uart_header.h:38: note: this is the location of the previous definition
+  #define UART_DEVICE_ID  XPAR_XUARTPS_1_DEVICE_ID
+ 
+In file included from ../src/sysmon_main.c:59:
+../../standalone_bsp_zcu102/psu_cortexa53_0/include/xsysmon.h:248: warning: "XSM_CH_TEMP" redefined
+ #define XSM_CH_TEMP  0x0  /**< On Chip Temperature */
+ 
+In file included from ../src/sysmon_main.c:58:
+../../standalone_bsp_zcu102/psu_cortexa53_0/include/xsysmonpsu.h:206: note: this is the location of the previous definition
+ #define XSM_CH_TEMP   0x0U  /**< On Chip Temperature */
+ 
+In file included from ../src/sysmon_main.c:59:
+../../standalone_bsp_zcu102/psu_cortexa53_0/include/xsysmon.h:249: warning: "XSM_CH_VCCINT" redefined
+ #define XSM_CH_VCCINT  0x1  /**< VCCINT */
+ 
+In file included from ../src/sysmon_main.c:58:
+../../standalone_bsp_zcu102/psu_cortexa53_0/include/xsysmonpsu.h:229: note: this is the location of the previous definition
+ #define XSM_CH_VCCINT       54U   /**< VCCINT */
+ 
+In file included from ../src/sysmon_main.c:59:
+../../standalone_bsp_zcu102/psu_cortexa53_0/include/xsysmon.h:250: warning: "XSM_CH_VCCAUX" redefined
+ #define XSM_CH_VCCAUX  0x2  /**< VCCAUX */
+ 
+In file included from ../src/sysmon_main.c:58:
+../../standalone_bsp_zcu102/psu_cortexa53_0/include/xsysmonpsu.h:231: note: this is the location of the previous definition
+ #define XSM_CH_VCCAUX       56U   /**< VCCAUX */
+ 
+In file included from ../src/sysmon_main.c:59:
+../../standalone_bsp_zcu102/psu_cortexa53_0/include/xsysmon.h:251: warning: "XSM_CH_VPVN" redefined
+ #define XSM_CH_VPVN  0x3  /**< VP/VN Dedicated analog inputs */
+ 
+In file included from ../src/sysmon_main.c:58:
+../../standalone_bsp_zcu102/psu_cortexa53_0/include/xsysmonpsu.h:209: note: this is the location of the previous definition
+ #define XSM_CH_VPVN   0x3U  /**< VP/VN Dedicated analog inputs */
+ 
+In file included from ../src/sysmon_main.c:59:
+../../standalone_bsp_zcu102/psu_cortexa53_0/include/xsysmon.h:252: warning: "XSM_CH_VREFP" redefined
+ #define XSM_CH_VREFP  0x4  /**< VREFP */
+ 
+In file included from ../src/sysmon_main.c:58:
+../../standalone_bsp_zcu102/psu_cortexa53_0/include/xsysmonpsu.h:210: note: this is the location of the previous definition
+ #define XSM_CH_VREFP  0x4U  /**< VREFP */
+ 
+In file included from ../src/sysmon_main.c:59:
+../../standalone_bsp_zcu102/psu_cortexa53_0/include/xsysmon.h:253: warning: "XSM_CH_VREFN" redefined
+ #define XSM_CH_VREFN  0x5  /**< VREFN */
+ 
+In file included from ../src/sysmon_main.c:58:
+../../standalone_bsp_zcu102/psu_cortexa53_0/include/xsysmonpsu.h:211: note: this is the location of the previous definition
+ #define XSM_CH_VREFN  0x5U  /**< VREFN */
+ 
+In file included from ../src/sysmon_main.c:59:
+../../standalone_bsp_zcu102/psu_cortexa53_0/include/xsysmon.h:255: warning: "XSM_CH_SUPPLY_CALIB" redefined
+ #define XSM_CH_SUPPLY_CALIB 0x07 /**< Supply Calib Data Reg */
+ 
+In file included from ../src/sysmon_main.c:58:
+../../standalone_bsp_zcu102/psu_cortexa53_0/include/xsysmonpsu.h:213: note: this is the location of the previous definition
+ #define XSM_CH_SUPPLY_CALIB 0x08U /**< Supply Calib Data Reg */
+ 
+In file included from ../src/sysmon_main.c:59:
+../../standalone_bsp_zcu102/psu_cortexa53_0/include/xsysmon.h:256: warning: "XSM_CH_ADC_CALIB" redefined
+ #define XSM_CH_ADC_CALIB 0x08 /**< ADC Offset Channel Reg */
+ 
+In file included from ../src/sysmon_main.c:58:
+../../standalone_bsp_zcu102/psu_cortexa53_0/include/xsysmonpsu.h:214: note: this is the location of the previous definition
+ #define XSM_CH_ADC_CALIB 0x09U /**< ADC Offset Channel Reg */
+ 
+In file included from ../src/sysmon_main.c:59:
+../../standalone_bsp_zcu102/psu_cortexa53_0/include/xsysmon.h:257: warning: "XSM_CH_GAINERR_CALIB" redefined
+ #define XSM_CH_GAINERR_CALIB  0x09 /**< Gain Error Channel Reg  */
+ 
+In file included from ../src/sysmon_main.c:58:
+../../standalone_bsp_zcu102/psu_cortexa53_0/include/xsysmonpsu.h:215: note: this is the location of the previous definition
+ #define XSM_CH_GAINERR_CALIB  0x0AU /**< Gain Error Channel Reg  */
+ 
+In file included from ../src/sysmon_main.c:59:
+../../standalone_bsp_zcu102/psu_cortexa53_0/include/xsysmon.h:261: warning: "XSM_CH_AUX_MIN" redefined
+ #define XSM_CH_AUX_MIN  16   /**< Channel number for 1st Aux Channel */
+ 
+In file included from ../src/sysmon_main.c:58:
+../../standalone_bsp_zcu102/psu_cortexa53_0/include/xsysmonpsu.h:219: note: this is the location of the previous definition
+ #define XSM_CH_AUX_MIN  16U   /**< Channel number for 1st Aux Channel */
+ 
+In file included from ../src/sysmon_main.c:59:
+../../standalone_bsp_zcu102/psu_cortexa53_0/include/xsysmon.h:262: warning: "XSM_CH_AUX_MAX" redefined
+ #define XSM_CH_AUX_MAX  31   /**< Channel number for Last Aux channel */
+ 
+In file included from ../src/sysmon_main.c:58:
+../../standalone_bsp_zcu102/psu_cortexa53_0/include/xsysmonpsu.h:220: note: this is the location of the previous definition
+ #define XSM_CH_AUX_MAX  31U   /**< Channel number for Last Aux channel */
+ 
+In file included from ../src/sysmon_main.c:59:
+../../standalone_bsp_zcu102/psu_cortexa53_0/include/xsysmon.h:276: warning: "XSM_CALIB_SUPPLY_OFFSET_COEFF" redefined
+ #define XSM_CALIB_SUPPLY_OFFSET_COEFF 0 /**< Supply Offset Calib Coefficient */
+ 
+In file included from ../src/sysmon_main.c:58:
+../../standalone_bsp_zcu102/psu_cortexa53_0/include/xsysmonpsu.h:242: note: this is the location of the previous definition
+ #define XSM_CALIB_SUPPLY_OFFSET_COEFF 0U /**< Supply Offset Calib Coefficient */
+ 
+In file included from ../src/sysmon_main.c:59:
+../../standalone_bsp_zcu102/psu_cortexa53_0/include/xsysmon.h:277: warning: "XSM_CALIB_ADC_OFFSET_COEFF" redefined
+ #define XSM_CALIB_ADC_OFFSET_COEFF    1 /**< ADC Offset Calib Coefficient */
+ 
+In file included from ../src/sysmon_main.c:58:
+../../standalone_bsp_zcu102/psu_cortexa53_0/include/xsysmonpsu.h:243: note: this is the location of the previous definition
+ #define XSM_CALIB_ADC_OFFSET_COEFF    1U /**< ADC Offset Calib Coefficient */
+ 
+In file included from ../src/sysmon_main.c:59:
+../../standalone_bsp_zcu102/psu_cortexa53_0/include/xsysmon.h:278: warning: "XSM_CALIB_GAIN_ERROR_COEFF" redefined
+ #define XSM_CALIB_GAIN_ERROR_COEFF    2 /**< Gain Error Calib Coefficient*/
+ 
+In file included from ../src/sysmon_main.c:58:
+../../standalone_bsp_zcu102/psu_cortexa53_0/include/xsysmonpsu.h:244: note: this is the location of the previous definition
+ #define XSM_CALIB_GAIN_ERROR_COEFF    2U /**< Gain Error Calib Coefficient*/
+ 
+In file included from ../src/sysmon_main.c:59:
+../../standalone_bsp_zcu102/psu_cortexa53_0/include/xsysmon.h:287: warning: "XSM_MAX_TEMP" redefined
+ #define XSM_MAX_TEMP  0  /**< Maximum Temperature Data */
+ 
+In file included from ../src/sysmon_main.c:58:
+../../standalone_bsp_zcu102/psu_cortexa53_0/include/xsysmonpsu.h:252: note: this is the location of the previous definition
+ #define XSM_MAX_TEMP  0U    /**< Maximum Temperature Data */
+ 
+In file included from ../src/sysmon_main.c:59:
+../../standalone_bsp_zcu102/psu_cortexa53_0/include/xsysmon.h:291: warning: "XSM_MIN_TEMP" redefined
+ #define XSM_MIN_TEMP  4  /**< Minimum Temperature Data */
+ 
+In file included from ../src/sysmon_main.c:58:
+../../standalone_bsp_zcu102/psu_cortexa53_0/include/xsysmonpsu.h:256: note: this is the location of the previous definition
+ #define XSM_MIN_TEMP  4U    /**< Minimum Temperature Data */
+ 
+In file included from ../src/sysmon_main.c:59:
+../../standalone_bsp_zcu102/psu_cortexa53_0/include/xsysmon.h:318: warning: "XSM_ATR_TEMP_UPPER" redefined
+ #define XSM_ATR_TEMP_UPPER  0   /**< High user Temperature */
+ 
+In file included from ../src/sysmon_main.c:58:
+../../standalone_bsp_zcu102/psu_cortexa53_0/include/xsysmonpsu.h:317: note: this is the location of the previous definition
+ #define XSM_ATR_TEMP_UPPER  0U   /**< High user Temperature limit */
+ 
+In file included from ../src/sysmon_main.c:59:
+../../standalone_bsp_zcu102/psu_cortexa53_0/include/xsysmon.h:321: warning: "XSM_ATR_OT_UPPER" redefined
+ #define XSM_ATR_OT_UPPER  3   /**< Lower Over Temperature limit */
+ 
+In file included from ../src/sysmon_main.c:58:
+../../standalone_bsp_zcu102/psu_cortexa53_0/include/xsysmonpsu.h:320: note: this is the location of the previous definition
+ #define XSM_ATR_OT_UPPER  3U   /**< Upper Over Temperature limit */
+ 
+In file included from ../src/sysmon_main.c:59:
+../../standalone_bsp_zcu102/psu_cortexa53_0/include/xsysmon.h:322: warning: "XSM_ATR_TEMP_LOWER" redefined
+ #define XSM_ATR_TEMP_LOWER  4   /**< Low user Temperature */
+ 
+In file included from ../src/sysmon_main.c:58:
+../../standalone_bsp_zcu102/psu_cortexa53_0/include/xsysmonpsu.h:321: note: this is the location of the previous definition
+ #define XSM_ATR_TEMP_LOWER  4U   /**< Low user Temperature */
+ 
+In file included from ../src/sysmon_main.c:59:
+../../standalone_bsp_zcu102/psu_cortexa53_0/include/xsysmon.h:325: warning: "XSM_ATR_OT_LOWER" redefined
+ #define XSM_ATR_OT_LOWER  7   /**< Lower Over Temperature limit */
+ 
+In file included from ../src/sysmon_main.c:58:
+../../standalone_bsp_zcu102/psu_cortexa53_0/include/xsysmonpsu.h:324: note: this is the location of the previous definition
+ #define XSM_ATR_OT_LOWER  7U   /**< Lower Over Temperature limit */
+ 
+In file included from ../src/sysmon_main.c:59:
+../../standalone_bsp_zcu102/psu_cortexa53_0/include/xsysmon.h:350: warning: "XSM_AVG_0_SAMPLES" redefined
+ #define XSM_AVG_0_SAMPLES 0 /**< No Averaging */
+ 
+In file included from ../src/sysmon_main.c:58:
+../../standalone_bsp_zcu102/psu_cortexa53_0/include/xsysmonpsu.h:285: note: this is the location of the previous definition
+ #define XSM_AVG_0_SAMPLES 0U /**< No Averaging */
+ 
+In file included from ../src/sysmon_main.c:59:
+../../standalone_bsp_zcu102/psu_cortexa53_0/include/xsysmon.h:351: warning: "XSM_AVG_16_SAMPLES" redefined
+ #define XSM_AVG_16_SAMPLES 1 /**< Average 16 samples */
+ 
+In file included from ../src/sysmon_main.c:58:
+../../standalone_bsp_zcu102/psu_cortexa53_0/include/xsysmonpsu.h:286: note: this is the location of the previous definition
+ #define XSM_AVG_16_SAMPLES 1U /**< Average 16 samples */
+ 
+In file included from ../src/sysmon_main.c:59:
+../../standalone_bsp_zcu102/psu_cortexa53_0/include/xsysmon.h:352: warning: "XSM_AVG_64_SAMPLES" redefined
+ #define XSM_AVG_64_SAMPLES 2 /**< Average 64 samples */
+ 
+In file included from ../src/sysmon_main.c:58:
+../../standalone_bsp_zcu102/psu_cortexa53_0/include/xsysmonpsu.h:287: note: this is the location of the previous definition
+ #define XSM_AVG_64_SAMPLES 2U /**< Average 64 samples */
+ 
+In file included from ../src/sysmon_main.c:59:
+../../standalone_bsp_zcu102/psu_cortexa53_0/include/xsysmon.h:353: warning: "XSM_AVG_256_SAMPLES" redefined
+ #define XSM_AVG_256_SAMPLES 3 /**< Average 256 samples */
+ 
+In file included from ../src/sysmon_main.c:58:
+../../standalone_bsp_zcu102/psu_cortexa53_0/include/xsysmonpsu.h:288: note: this is the location of the previous definition
+ #define XSM_AVG_256_SAMPLES 3U /**< Average 256 samples */
+ 
+In file included from ../src/sysmon_main.c:59:
+../../standalone_bsp_zcu102/psu_cortexa53_0/include/xsysmon.h:362: warning: "XSM_SEQ_MODE_SAFE" redefined
+ #define XSM_SEQ_MODE_SAFE  0 /**< Default Safe Mode */
+ 
+In file included from ../src/sysmon_main.c:58:
+../../standalone_bsp_zcu102/psu_cortexa53_0/include/xsysmonpsu.h:296: note: this is the location of the previous definition
+ #define XSM_SEQ_MODE_SAFE  0U /**< Default Safe Mode */
+ 
+In file included from ../src/sysmon_main.c:59:
+../../standalone_bsp_zcu102/psu_cortexa53_0/include/xsysmon.h:363: warning: "XSM_SEQ_MODE_ONEPASS" redefined
+ #define XSM_SEQ_MODE_ONEPASS  1 /**< Onepass through Sequencer */
+ 
+In file included from ../src/sysmon_main.c:58:
+../../standalone_bsp_zcu102/psu_cortexa53_0/include/xsysmonpsu.h:297: note: this is the location of the previous definition
+ #define XSM_SEQ_MODE_ONEPASS  1U /**< Onepass through Sequencer */
+ 
+In file included from ../src/sysmon_main.c:59:
+../../standalone_bsp_zcu102/psu_cortexa53_0/include/xsysmon.h:364: warning: "XSM_SEQ_MODE_CONTINPASS" redefined
+ #define XSM_SEQ_MODE_CONTINPASS  2 /**< Continuous Cycling Seqquencer */
+ 
+In file included from ../src/sysmon_main.c:58:
+../../standalone_bsp_zcu102/psu_cortexa53_0/include/xsysmonpsu.h:298: note: this is the location of the previous definition
+ #define XSM_SEQ_MODE_CONTINPASS  2U /**< Continuous Cycling Seqquencer */
+ 
+In file included from ../src/sysmon_main.c:59:
+../../standalone_bsp_zcu102/psu_cortexa53_0/include/xsysmon.h:365: warning: "XSM_SEQ_MODE_SINGCHAN" redefined
+ #define XSM_SEQ_MODE_SINGCHAN  3 /**< Single channel - No Sequencing */
+ 
+In file included from ../src/sysmon_main.c:58:
+../../standalone_bsp_zcu102/psu_cortexa53_0/include/xsysmonpsu.h:299: note: this is the location of the previous definition
+ #define XSM_SEQ_MODE_SINGCHAN  3U /**< Single channel - No Sequencing */
+ 
+../src/sysmon_main.c: In function 'sendStatusMsgViaUart':
+../src/sysmon_main.c:306:20: warning: pointer targets in passing argument 2 of 'sendUart' differ in signedness [-Wpointer-sign]
+  sendUart(&UartPs, msg, size_local);
+                    ^~~
+In file included from ../src/.\xsysmon\sysmon_header.h:36,
+                 from ../src/sysmon_main.c:49:
+../src/.\xsysmon\..\peripheral\uart_header.h:67:5: note: expected 'u8 *' {aka 'unsigned char *'} but argument is of type 'char *'
+ int sendUart(XUartPs *IntcInstPtr, u8 * msg, u32 size);
+     ^~~~~~~~
+../src/sysmon_main.c: In function 'sendCurrentMeasurmentViaUart':
+../src/sysmon_main.c:344:20: warning: pointer targets in passing argument 2 of 'sendUart' differ in signedness [-Wpointer-sign]
+  sendUart(&UartPs, msg, size_local);
+                    ^~~
+In file included from ../src/.\xsysmon\sysmon_header.h:36,
+                 from ../src/sysmon_main.c:49:
+../src/.\xsysmon\..\peripheral\uart_header.h:67:5: note: expected 'u8 *' {aka 'unsigned char *'} but argument is of type 'char *'
+ int sendUart(XUartPs *IntcInstPtr, u8 * msg, u32 size);
+     ^~~~~~~~
+../src/sysmon_main.c: In function 'sendMinMaxMeasurmentViaUart':
+../src/sysmon_main.c:391:20: warning: pointer targets in passing argument 2 of 'sendUart' differ in signedness [-Wpointer-sign]
+  sendUart(&UartPs, msg, size_local);
+                    ^~~
+In file included from ../src/.\xsysmon\sysmon_header.h:36,
+                 from ../src/sysmon_main.c:49:
+../src/.\xsysmon\..\peripheral\uart_header.h:67:5: note: expected 'u8 *' {aka 'unsigned char *'} but argument is of type 'char *'
+ int sendUart(XUartPs *IntcInstPtr, u8 * msg, u32 size);
+     ^~~~~~~~
+../src/sysmon_main.c: At top level:
+../src/.\xsysmon\..\peripheral\uart_header.h:61:12: warning: 'SetupInterruptSystem' declared 'static' but never defined [-Wunused-function]
+ static int SetupInterruptSystem(INTC *IntcInstancePtr,
+            ^~~~~~~~~~~~~~~~~~~~
+'Finished building: ../src/sysmon_main.c'
+' '
+'Building target: sysmon_zcu102.elf'
+'Invoking: ARM v8 gcc linker'
+aarch64-none-elf-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_zcu102/psu_cortexa53_0/lib -o "sysmon_zcu102.elf"  ./src/xsysmon_psu/xsysmonpsu_polled_example.o  ./src/xsysmon/xsysmon_polled_example.o  ./src/peripheral/i2c.o ./src/peripheral/pmodtmp2.o ./src/peripheral/system_test.o ./src/peripheral/xgpio_tapp_example.o ./src/peripheral/xuartps_intr_example.o  ./src/interrupts/xscugic_tapp_example.o  ./src/classifier/feature_extraction.o ./src/classifier/mlmodel.o  ./src/platform.o ./src/sysmon_main.o   -lm -l-Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+c:/xilinx/sdk/2019.1/gnu/aarch64/nt/aarch64-none/bin/../lib/gcc/aarch64-none-elf/8.2.0/../../../../aarch64-none-elf/bin/ld.exe: cannot find -l-Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:43: sysmon_zcu102.elf] Error 1
+
+21:26:56 Build Finished (took 3s.667ms)
+

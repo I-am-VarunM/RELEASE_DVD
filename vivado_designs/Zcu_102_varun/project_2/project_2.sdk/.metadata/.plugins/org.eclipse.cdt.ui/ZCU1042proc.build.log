@@ -1,0 +1,273 @@
+18:08:02 **** Auto Build of configuration Debug for project ZCU1042proc ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM v8 gcc compiler
+aarch64-none-elf-gcc -Wall -O0 -g3 -I../../ZCU1042proc_bsp/psu_cortexa53_0/include -I/home/manvar00/Downloads/RELEASE_DVD/vivado_designs/zcu102_src/project_2/project_2.sdk/sysmon/src/peripheral/ -I/home/manvar00/Downloads/RELEASE_DVD/vivado_designs/zcu102_src/project_2/project_2.sdk/sysmon/src/xsysmon/ -I/home/manvar00/Downloads/RELEASE_DVD/vivado_designs/zcu102_src/project_2/project_2.sdk/sysmon/src/interrupts/ -I/home/manvar00/Downloads/RELEASE_DVD/vivado_designs/zcu102_src/project_2/project_2.sdk/sysmon/src/classifier/ -I/home/manvar00/Downloads/RELEASE_DVD/vivado_designs/zcu102_src/project_2/project_2.sdk/sysmon/src/xsysmon_psu/ -I/home/manvar00/Downloads/RELEASE_DVD/vivado_designs/zcu102_src/project_2/project_2.sdk/sysmon/src/xsysmon_psu -c -fmessage-length=0 -MT"src/helloworld.o" -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from /home/manvar00/Downloads/RELEASE_DVD/vivado_designs/zcu102_src/project_2/project_2.sdk/sysmon/src/xsysmon/sysmon_header.h:37,
+                 from ../src/helloworld.c:49:
+../../ZCU1042proc_bsp/psu_cortexa53_0/include/xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from ../src/platform.h:36,
+                 from ../src/helloworld.c:51:
+../src/platform_config.h:5: warning: "UART_DEVICE_ID" redefined
+ #define UART_DEVICE_ID 0
+ 
+In file included from /home/manvar00/Downloads/RELEASE_DVD/vivado_designs/zcu102_src/project_2/project_2.sdk/sysmon/src/xsysmon/sysmon_header.h:36,
+                 from ../src/helloworld.c:49:
+/home/manvar00/Downloads/RELEASE_DVD/vivado_designs/zcu102_src/project_2/project_2.sdk/sysmon/src/peripheral/uart_header.h:38: note: this is the location of the previous definition
+  #define UART_DEVICE_ID  XPAR_XUARTPS_1_DEVICE_ID
+ 
+In file included from ../src/helloworld.c:59:
+../../ZCU1042proc_bsp/psu_cortexa53_0/include/xsysmon.h:248: warning: "XSM_CH_TEMP" redefined
+ #define XSM_CH_TEMP  0x0  /**< On Chip Temperature */
+ 
+In file included from ../src/helloworld.c:58:
+../../ZCU1042proc_bsp/psu_cortexa53_0/include/xsysmonpsu.h:206: note: this is the location of the previous definition
+ #define XSM_CH_TEMP   0x0U  /**< On Chip Temperature */
+ 
+In file included from ../src/helloworld.c:59:
+../../ZCU1042proc_bsp/psu_cortexa53_0/include/xsysmon.h:249: warning: "XSM_CH_VCCINT" redefined
+ #define XSM_CH_VCCINT  0x1  /**< VCCINT */
+ 
+In file included from ../src/helloworld.c:58:
+../../ZCU1042proc_bsp/psu_cortexa53_0/include/xsysmonpsu.h:229: note: this is the location of the previous definition
+ #define XSM_CH_VCCINT       54U   /**< VCCINT */
+ 
+In file included from ../src/helloworld.c:59:
+../../ZCU1042proc_bsp/psu_cortexa53_0/include/xsysmon.h:250: warning: "XSM_CH_VCCAUX" redefined
+ #define XSM_CH_VCCAUX  0x2  /**< VCCAUX */
+ 
+In file included from ../src/helloworld.c:58:
+../../ZCU1042proc_bsp/psu_cortexa53_0/include/xsysmonpsu.h:231: note: this is the location of the previous definition
+ #define XSM_CH_VCCAUX       56U   /**< VCCAUX */
+ 
+In file included from ../src/helloworld.c:59:
+../../ZCU1042proc_bsp/psu_cortexa53_0/include/xsysmon.h:251: warning: "XSM_CH_VPVN" redefined
+ #define XSM_CH_VPVN  0x3  /**< VP/VN Dedicated analog inputs */
+ 
+In file included from ../src/helloworld.c:58:
+../../ZCU1042proc_bsp/psu_cortexa53_0/include/xsysmonpsu.h:209: note: this is the location of the previous definition
+ #define XSM_CH_VPVN   0x3U  /**< VP/VN Dedicated analog inputs */
+ 
+In file included from ../src/helloworld.c:59:
+../../ZCU1042proc_bsp/psu_cortexa53_0/include/xsysmon.h:252: warning: "XSM_CH_VREFP" redefined
+ #define XSM_CH_VREFP  0x4  /**< VREFP */
+ 
+In file included from ../src/helloworld.c:58:
+../../ZCU1042proc_bsp/psu_cortexa53_0/include/xsysmonpsu.h:210: note: this is the location of the previous definition
+ #define XSM_CH_VREFP  0x4U  /**< VREFP */
+ 
+In file included from ../src/helloworld.c:59:
+../../ZCU1042proc_bsp/psu_cortexa53_0/include/xsysmon.h:253: warning: "XSM_CH_VREFN" redefined
+ #define XSM_CH_VREFN  0x5  /**< VREFN */
+ 
+In file included from ../src/helloworld.c:58:
+../../ZCU1042proc_bsp/psu_cortexa53_0/include/xsysmonpsu.h:211: note: this is the location of the previous definition
+ #define XSM_CH_VREFN  0x5U  /**< VREFN */
+ 
+In file included from ../src/helloworld.c:59:
+../../ZCU1042proc_bsp/psu_cortexa53_0/include/xsysmon.h:255: warning: "XSM_CH_SUPPLY_CALIB" redefined
+ #define XSM_CH_SUPPLY_CALIB 0x07 /**< Supply Calib Data Reg */
+ 
+In file included from ../src/helloworld.c:58:
+../../ZCU1042proc_bsp/psu_cortexa53_0/include/xsysmonpsu.h:213: note: this is the location of the previous definition
+ #define XSM_CH_SUPPLY_CALIB 0x08U /**< Supply Calib Data Reg */
+ 
+In file included from ../src/helloworld.c:59:
+../../ZCU1042proc_bsp/psu_cortexa53_0/include/xsysmon.h:256: warning: "XSM_CH_ADC_CALIB" redefined
+ #define XSM_CH_ADC_CALIB 0x08 /**< ADC Offset Channel Reg */
+ 
+In file included from ../src/helloworld.c:58:
+../../ZCU1042proc_bsp/psu_cortexa53_0/include/xsysmonpsu.h:214: note: this is the location of the previous definition
+ #define XSM_CH_ADC_CALIB 0x09U /**< ADC Offset Channel Reg */
+ 
+In file included from ../src/helloworld.c:59:
+../../ZCU1042proc_bsp/psu_cortexa53_0/include/xsysmon.h:257: warning: "XSM_CH_GAINERR_CALIB" redefined
+ #define XSM_CH_GAINERR_CALIB  0x09 /**< Gain Error Channel Reg  */
+ 
+In file included from ../src/helloworld.c:58:
+../../ZCU1042proc_bsp/psu_cortexa53_0/include/xsysmonpsu.h:215: note: this is the location of the previous definition
+ #define XSM_CH_GAINERR_CALIB  0x0AU /**< Gain Error Channel Reg  */
+ 
+In file included from ../src/helloworld.c:59:
+../../ZCU1042proc_bsp/psu_cortexa53_0/include/xsysmon.h:261: warning: "XSM_CH_AUX_MIN" redefined
+ #define XSM_CH_AUX_MIN  16   /**< Channel number for 1st Aux Channel */
+ 
+In file included from ../src/helloworld.c:58:
+../../ZCU1042proc_bsp/psu_cortexa53_0/include/xsysmonpsu.h:219: note: this is the location of the previous definition
+ #define XSM_CH_AUX_MIN  16U   /**< Channel number for 1st Aux Channel */
+ 
+In file included from ../src/helloworld.c:59:
+../../ZCU1042proc_bsp/psu_cortexa53_0/include/xsysmon.h:262: warning: "XSM_CH_AUX_MAX" redefined
+ #define XSM_CH_AUX_MAX  31   /**< Channel number for Last Aux channel */
+ 
+In file included from ../src/helloworld.c:58:
+../../ZCU1042proc_bsp/psu_cortexa53_0/include/xsysmonpsu.h:220: note: this is the location of the previous definition
+ #define XSM_CH_AUX_MAX  31U   /**< Channel number for Last Aux channel */
+ 
+In file included from ../src/helloworld.c:59:
+../../ZCU1042proc_bsp/psu_cortexa53_0/include/xsysmon.h:276: warning: "XSM_CALIB_SUPPLY_OFFSET_COEFF" redefined
+ #define XSM_CALIB_SUPPLY_OFFSET_COEFF 0 /**< Supply Offset Calib Coefficient */
+ 
+In file included from ../src/helloworld.c:58:
+../../ZCU1042proc_bsp/psu_cortexa53_0/include/xsysmonpsu.h:242: note: this is the location of the previous definition
+ #define XSM_CALIB_SUPPLY_OFFSET_COEFF 0U /**< Supply Offset Calib Coefficient */
+ 
+In file included from ../src/helloworld.c:59:
+../../ZCU1042proc_bsp/psu_cortexa53_0/include/xsysmon.h:277: warning: "XSM_CALIB_ADC_OFFSET_COEFF" redefined
+ #define XSM_CALIB_ADC_OFFSET_COEFF    1 /**< ADC Offset Calib Coefficient */
+ 
+In file included from ../src/helloworld.c:58:
+../../ZCU1042proc_bsp/psu_cortexa53_0/include/xsysmonpsu.h:243: note: this is the location of the previous definition
+ #define XSM_CALIB_ADC_OFFSET_COEFF    1U /**< ADC Offset Calib Coefficient */
+ 
+In file included from ../src/helloworld.c:59:
+../../ZCU1042proc_bsp/psu_cortexa53_0/include/xsysmon.h:278: warning: "XSM_CALIB_GAIN_ERROR_COEFF" redefined
+ #define XSM_CALIB_GAIN_ERROR_COEFF    2 /**< Gain Error Calib Coefficient*/
+ 
+In file included from ../src/helloworld.c:58:
+../../ZCU1042proc_bsp/psu_cortexa53_0/include/xsysmonpsu.h:244: note: this is the location of the previous definition
+ #define XSM_CALIB_GAIN_ERROR_COEFF    2U /**< Gain Error Calib Coefficient*/
+ 
+In file included from ../src/helloworld.c:59:
+../../ZCU1042proc_bsp/psu_cortexa53_0/include/xsysmon.h:287: warning: "XSM_MAX_TEMP" redefined
+ #define XSM_MAX_TEMP  0  /**< Maximum Temperature Data */
+ 
+In file included from ../src/helloworld.c:58:
+../../ZCU1042proc_bsp/psu_cortexa53_0/include/xsysmonpsu.h:252: note: this is the location of the previous definition
+ #define XSM_MAX_TEMP  0U    /**< Maximum Temperature Data */
+ 
+In file included from ../src/helloworld.c:59:
+../../ZCU1042proc_bsp/psu_cortexa53_0/include/xsysmon.h:291: warning: "XSM_MIN_TEMP" redefined
+ #define XSM_MIN_TEMP  4  /**< Minimum Temperature Data */
+ 
+In file included from ../src/helloworld.c:58:
+../../ZCU1042proc_bsp/psu_cortexa53_0/include/xsysmonpsu.h:256: note: this is the location of the previous definition
+ #define XSM_MIN_TEMP  4U    /**< Minimum Temperature Data */
+ 
+In file included from ../src/helloworld.c:59:
+../../ZCU1042proc_bsp/psu_cortexa53_0/include/xsysmon.h:318: warning: "XSM_ATR_TEMP_UPPER" redefined
+ #define XSM_ATR_TEMP_UPPER  0   /**< High user Temperature */
+ 
+In file included from ../src/helloworld.c:58:
+../../ZCU1042proc_bsp/psu_cortexa53_0/include/xsysmonpsu.h:317: note: this is the location of the previous definition
+ #define XSM_ATR_TEMP_UPPER  0U   /**< High user Temperature limit */
+ 
+In file included from ../src/helloworld.c:59:
+../../ZCU1042proc_bsp/psu_cortexa53_0/include/xsysmon.h:321: warning: "XSM_ATR_OT_UPPER" redefined
+ #define XSM_ATR_OT_UPPER  3   /**< Lower Over Temperature limit */
+ 
+In file included from ../src/helloworld.c:58:
+../../ZCU1042proc_bsp/psu_cortexa53_0/include/xsysmonpsu.h:320: note: this is the location of the previous definition
+ #define XSM_ATR_OT_UPPER  3U   /**< Upper Over Temperature limit */
+ 
+In file included from ../src/helloworld.c:59:
+../../ZCU1042proc_bsp/psu_cortexa53_0/include/xsysmon.h:322: warning: "XSM_ATR_TEMP_LOWER" redefined
+ #define XSM_ATR_TEMP_LOWER  4   /**< Low user Temperature */
+ 
+In file included from ../src/helloworld.c:58:
+../../ZCU1042proc_bsp/psu_cortexa53_0/include/xsysmonpsu.h:321: note: this is the location of the previous definition
+ #define XSM_ATR_TEMP_LOWER  4U   /**< Low user Temperature */
+ 
+In file included from ../src/helloworld.c:59:
+../../ZCU1042proc_bsp/psu_cortexa53_0/include/xsysmon.h:325: warning: "XSM_ATR_OT_LOWER" redefined
+ #define XSM_ATR_OT_LOWER  7   /**< Lower Over Temperature limit */
+ 
+In file included from ../src/helloworld.c:58:
+../../ZCU1042proc_bsp/psu_cortexa53_0/include/xsysmonpsu.h:324: note: this is the location of the previous definition
+ #define XSM_ATR_OT_LOWER  7U   /**< Lower Over Temperature limit */
+ 
+In file included from ../src/helloworld.c:59:
+../../ZCU1042proc_bsp/psu_cortexa53_0/include/xsysmon.h:350: warning: "XSM_AVG_0_SAMPLES" redefined
+ #define XSM_AVG_0_SAMPLES 0 /**< No Averaging */
+ 
+In file included from ../src/helloworld.c:58:
+../../ZCU1042proc_bsp/psu_cortexa53_0/include/xsysmonpsu.h:285: note: this is the location of the previous definition
+ #define XSM_AVG_0_SAMPLES 0U /**< No Averaging */
+ 
+In file included from ../src/helloworld.c:59:
+../../ZCU1042proc_bsp/psu_cortexa53_0/include/xsysmon.h:351: warning: "XSM_AVG_16_SAMPLES" redefined
+ #define XSM_AVG_16_SAMPLES 1 /**< Average 16 samples */
+ 
+In file included from ../src/helloworld.c:58:
+../../ZCU1042proc_bsp/psu_cortexa53_0/include/xsysmonpsu.h:286: note: this is the location of the previous definition
+ #define XSM_AVG_16_SAMPLES 1U /**< Average 16 samples */
+ 
+In file included from ../src/helloworld.c:59:
+../../ZCU1042proc_bsp/psu_cortexa53_0/include/xsysmon.h:352: warning: "XSM_AVG_64_SAMPLES" redefined
+ #define XSM_AVG_64_SAMPLES 2 /**< Average 64 samples */
+ 
+In file included from ../src/helloworld.c:58:
+../../ZCU1042proc_bsp/psu_cortexa53_0/include/xsysmonpsu.h:287: note: this is the location of the previous definition
+ #define XSM_AVG_64_SAMPLES 2U /**< Average 64 samples */
+ 
+In file included from ../src/helloworld.c:59:
+../../ZCU1042proc_bsp/psu_cortexa53_0/include/xsysmon.h:353: warning: "XSM_AVG_256_SAMPLES" redefined
+ #define XSM_AVG_256_SAMPLES 3 /**< Average 256 samples */
+ 
+In file included from ../src/helloworld.c:58:
+../../ZCU1042proc_bsp/psu_cortexa53_0/include/xsysmonpsu.h:288: note: this is the location of the previous definition
+ #define XSM_AVG_256_SAMPLES 3U /**< Average 256 samples */
+ 
+In file included from ../src/helloworld.c:59:
+../../ZCU1042proc_bsp/psu_cortexa53_0/include/xsysmon.h:362: warning: "XSM_SEQ_MODE_SAFE" redefined
+ #define XSM_SEQ_MODE_SAFE  0 /**< Default Safe Mode */
+ 
+In file included from ../src/helloworld.c:58:
+../../ZCU1042proc_bsp/psu_cortexa53_0/include/xsysmonpsu.h:296: note: this is the location of the previous definition
+ #define XSM_SEQ_MODE_SAFE  0U /**< Default Safe Mode */
+ 
+In file included from ../src/helloworld.c:59:
+../../ZCU1042proc_bsp/psu_cortexa53_0/include/xsysmon.h:363: warning: "XSM_SEQ_MODE_ONEPASS" redefined
+ #define XSM_SEQ_MODE_ONEPASS  1 /**< Onepass through Sequencer */
+ 
+In file included from ../src/helloworld.c:58:
+../../ZCU1042proc_bsp/psu_cortexa53_0/include/xsysmonpsu.h:297: note: this is the location of the previous definition
+ #define XSM_SEQ_MODE_ONEPASS  1U /**< Onepass through Sequencer */
+ 
+In file included from ../src/helloworld.c:59:
+../../ZCU1042proc_bsp/psu_cortexa53_0/include/xsysmon.h:364: warning: "XSM_SEQ_MODE_CONTINPASS" redefined
+ #define XSM_SEQ_MODE_CONTINPASS  2 /**< Continuous Cycling Seqquencer */
+ 
+In file included from ../src/helloworld.c:58:
+../../ZCU1042proc_bsp/psu_cortexa53_0/include/xsysmonpsu.h:298: note: this is the location of the previous definition
+ #define XSM_SEQ_MODE_CONTINPASS  2U /**< Continuous Cycling Seqquencer */
+ 
+In file included from ../src/helloworld.c:59:
+../../ZCU1042proc_bsp/psu_cortexa53_0/include/xsysmon.h:365: warning: "XSM_SEQ_MODE_SINGCHAN" redefined
+ #define XSM_SEQ_MODE_SINGCHAN  3 /**< Single channel - No Sequencing */
+ 
+In file included from ../src/helloworld.c:58:
+../../ZCU1042proc_bsp/psu_cortexa53_0/include/xsysmonpsu.h:299: note: this is the location of the previous definition
+ #define XSM_SEQ_MODE_SINGCHAN  3U /**< Single channel - No Sequencing */
+ 
+../src/helloworld.c: In function 'sendStatusMsgViaUart':
+../src/helloworld.c:206:20: warning: pointer targets in passing argument 2 of 'sendUart' differ in signedness [-Wpointer-sign]
+  sendUart(&UartPs, msg, size_local);
+                    ^~~
+In file included from /home/manvar00/Downloads/RELEASE_DVD/vivado_designs/zcu102_src/project_2/project_2.sdk/sysmon/src/xsysmon/sysmon_header.h:36,
+                 from ../src/helloworld.c:49:
+/home/manvar00/Downloads/RELEASE_DVD/vivado_designs/zcu102_src/project_2/project_2.sdk/sysmon/src/peripheral/uart_header.h:67:5: note: expected 'u8 *' {aka 'unsigned char *'} but argument is of type 'char *'
+ int sendUart(XUartPs *IntcInstPtr, u8 * msg, u32 size);
+     ^~~~~~~~
+../src/helloworld.c: At top level:
+/home/manvar00/Downloads/RELEASE_DVD/vivado_designs/zcu102_src/project_2/project_2.sdk/sysmon/src/peripheral/uart_header.h:61:12: warning: 'SetupInterruptSystem' declared 'static' but never defined [-Wunused-function]
+ static int SetupInterruptSystem(INTC *IntcInstancePtr,
+            ^~~~~~~~~~~~~~~~~~~~
+Finished building: ../src/helloworld.c
+ 
+Building target: ZCU1042proc.elf
+Invoking: ARM v8 gcc linker
+aarch64-none-elf-gcc -Wl,-T -Wl,../src/lscript.ld -L../../ZCU1042proc_bsp/psu_cortexa53_0/lib -o "ZCU1042proc.elf"  ./src/xsysmon_psu/xsysmonpsu_polled_example.o  ./src/xsysmon/xsysmon_polled_example.o  ./src/peripheral/i2c.o ./src/peripheral/pmodtmp2.o ./src/peripheral/system_test.o ./src/peripheral/xgpio_tapp_example.o ./src/peripheral/xuartps_intr_example.o  ./src/interrupts/xscugic_tapp_example.o  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: ZCU1042proc.elf
+ 
+Invoking: ARM v8 Print Size
+aarch64-none-elf-size ZCU1042proc.elf  |tee "ZCU1042proc.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 134680	   7888	  21248	 163816	  27fe8	ZCU1042proc.elf
+Finished building: ZCU1042proc.elf.size
+ 
+
+18:08:02 Build Finished (took 481ms)
+

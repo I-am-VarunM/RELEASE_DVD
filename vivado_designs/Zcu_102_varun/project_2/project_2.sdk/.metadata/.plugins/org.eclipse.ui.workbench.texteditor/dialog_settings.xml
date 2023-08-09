@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item value="false" key="isRegEx"/>
+		<item value="" key="selection"/>
+		<item value="false" key="casesensitive"/>
+		<item value="false" key="incremental"/>
+		<item value="true" key="wrap"/>
+		<item value="false" key="wholeword"/>
+		<list key="findhistory">
+			<item value="115200"/>
+			<item value="1152"/>
+			<item value="9600"/>
+			<item value="sendStatusMsgViaUart"/>
+			<item value="0x555555"/>
+			<item value="0x55555555"/>
+			<item value="plaintext"/>
+			<item value="CHANNEL_0"/>
+		</list>
+		<list key="replacehistory">
+			<item value="0xaaaaaaaa"/>
+			<item value="key"/>
+			<item value="gpio"/>
+			<item value="//sendU"/>
+			<item value="//sendUart"/>
+		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item value="312" key="DIALOG_WIDTH"/>
+		<item value="1|Sans|10.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
+		<item value="455" key="DIALOG_HEIGHT"/>
+		<item value="1513" key="DIALOG_X_ORIGIN"/>
+		<item value="166" key="DIALOG_Y_ORIGIN"/>
+	</section>
+</section>

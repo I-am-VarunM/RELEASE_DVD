@@ -1,0 +1,26 @@
+13:23:38 **** Build of configuration Debug for project trigger ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM v8 gcc compiler
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../trigger_bsp/psu_cortexa53_1/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building file: ../src/platform.c
+Invoking: ARM v8 gcc compiler
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../trigger_bsp/psu_cortexa53_1/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+Finished building: ../src/platform.c
+ 
+Building target: trigger.elf
+Invoking: ARM v8 gcc linker
+aarch64-none-elf-gcc -Wl,-T -Wl,../src/lscript.ld -L../../trigger_bsp/psu_cortexa53_1/lib -o "trigger.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: trigger.elf
+ 
+Invoking: ARM v8 Print Size
+aarch64-none-elf-size trigger.elf  |tee "trigger.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  30308	   2048	  20616	  52972	   ceec	trigger.elf
+Finished building: trigger.elf.size
+ 
+
+13:23:39 Build Finished (took 964ms)
+
